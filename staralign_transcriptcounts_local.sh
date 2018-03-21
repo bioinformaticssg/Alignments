@@ -58,7 +58,7 @@ do
 		STAR --chimSegmentMin 15 --chimJunctionOverhangMin 15 --outFilterMismatchNmax 3 --alignEndsType Local  --runThreadN $P \
 		--outFilterMultimapNmax 1 --outBAMcompression 10 --outBAMsortingThreadN $P \
 		--quantMode GeneCounts  TranscriptomeSAM  --quantTranscriptomeBAMcompression 10 \
-		--outSAMstrandField intronMotif --outSAMtype BAM SortedByCoordinate --alignSJDBoverhangMin 6 --alignIntronMax 300000 --genomeDir $INDEX \
+		--outSAMtype BAM SortedByCoordinate --alignSJDBoverhangMin 6 --alignIntronMax 300000 --genomeDir $INDEX \
 		--sjdbGTFfile $REF_ANNOTATION --outFileNamePrefix ${OUT_DIR}/${SAMPLE}_${REPLICATE}.star \
 		--readFilesCommand zcat --readFilesIn ${R1} ${R2}
 
